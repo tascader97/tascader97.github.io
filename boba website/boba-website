@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Bubble Tea Shop</title>
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#about">About</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section id="hero">
+      <h1>Welcome to Bubble Tea Shop</h1>
+    </section>
+    <section id="menu">
+      <h2>Menu</h2>
+      <!-- Add your menu items here -->
+    </section>
+    <section id="contact">
+      <h2>Contact</h2>
+      <!-- Add your contact information here -->
+    </section>
+    <section id="about">
+      <h2>About</h2>
+      <!-- Add information about your shop here -->
+    </section>
+  </main>
+  <script src="scripts.js"></script>
+</body>
+</html>

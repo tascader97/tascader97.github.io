@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+    <title>Menu - Bubble Tea Shop</title>
+    <head>
+        <style>
+            .search-container {
+                position: absolute;
+                top: 55px;
+                right: 10px;
+                border: none;
+                
+            }
+            .card-inner {
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: transform 0.5s;
+}
+.card-front,
+.card-back {
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.card-back {
+  transform: rotateY(180deg);
+}
+.card-flip {
+  transform: rotateY(180deg);
+}
+        </style>
+    </head>
+</head>
+<body>
+    <div class="search-container">
+        <form id="search" action="/search" >
+            <input type="text" placeholder="Search.." name="search">
+            <button class="submit">Search</button>
+        </form>
+    </div>
+    <header>
+          
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="plants.html">Plants</a></li>
+                <li><a href="#contact">Contact</a></li>
+               
+                </ul>
+        </nav>
+        <button id="theme-toggle">Light Mode</button>
+    </header>
+    <main>
+        <!-- Add this HTML code inside your main content area or wherever you want the search bar to appear -->
+  <div class="section-buttons-plants">
+    <a href="#specialty-drinks" class="section-btn">Plants</a>
+    <a href="#smoothies" class="section-btn">Pots</a>
+    <a href="#espresso-tea" class="section-btn">Plant Care</a>  
+</div>
+<div class="all">
+  <h2 id="specialty-drinks-plants">Plants</h2>
+  <section id="specialty-drinks">
+  <div class="drinks-section">
+  <div class="drink-container">
+    <div class="drink-row">
+      <div class="drink-card">
+        <div class="card-inner">
+          <div class="card-front">
+            <img src="https://plus.unsplash.com/premium_photo-1668780538108-a097b10a918a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80" alt="Drink 1" class="drink-image">
+            <span class="drink-name">Pearl Plant</span>
+            <span class="drink-price">$5.99</span>
+            <button class="read-more">Read More...</button>
+          </div>
+          <div class="card-back">
+            <p class="drink-description">
+                Limonade maison, matcha. / Homemade lemonade, matcha.
+            </p>
+            <button class="close-description">Close</button>
+          </div>
+        </div>
+      </div>
+    <div class="drink-card">
+    <div class="card-inner">
+    <div class="card-front">
+    <img src="https://images.unsplash.com/photo-1520412099551-62b6bafeb5bb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80" alt="Drink 1" class="drink-image">
+    <span class="drink-name">Bonsai Tree</span>
+    <span class="drink-price">$5.99</span>
+                                  <button class="read-more">Read More...</button>
+                                    </div>
+                                  <div class="card-back">
+                                    <p class="drink-description">
+                                        Limonade maison, purée de fraise/ Homemade lemonade, strawberry puree
+                                    </p>
+                                      <button class="close-description">Close</button>
+                                    </div>
+                                  </div>
+                                </div>
+
+                                <div class="drink-card">
+                                  <div class="card-inner">
+                                    <div class="card-front">
+                                      <img src="https://images.unsplash.com/photo-1512428813834-c702c7702b78?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80" alt="Drink 1" class="drink-image">
+                                      <span class="drink-name">Money Tree</span>
+                                      <span class="drink-price">$5.99</span>
+                                      <button class="read-more">Read More...</button>
+                                    </div>
+                                    <div class="card-back">
+                                      <p class="drink-description">
+                                        Jus de mangue, purée de mangue, sirop chai maison. / Mango juice, mango puree, chai syrup.
+                                      </p>
+                                      <button class="close-description">Close</button>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="drink-card">
+                                  <div class="card-inner">
+                                    <div class="card-front">
+                                      <img src="https://images.unsplash.com/photo-1453904300235-0f2f60b15b5d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=772&q=80" alt="Drink 1" class="drink-image">
+                                      <span class="drink-name">Mini Palm Tree</span>
+                                      <span class="drink-price">$5.99</span>
+                                      <button class="read-more">Read More...</button>
+                                    </div>
+                                    <div class="card-back">
+                                      <p class="drink-description">
+                                        Tisane hibiscus, nectar et purée de pêche. / Hibiscu tea, peach nectar and puree.
+                                      </p>
+                                      <button class="close-description">Close</button>
+                                    </div>
+                                  </div>
+                                </div>
+                           
+                    <div class="drink-card">
+                      <div class="card-inner">
+                        <div class="card-front">
+                          <img src="https://images.unsplash.com/photo-1459411552884-841db9b3cc2a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=948&q=80" alt="Drink 1" class="drink-image">
+                          <span class="drink-name">Cactus</span>
+                          <span class="drink-price">$5.99</span>
+                          <button class="read-more">Read More...</button>
+                        </div>
+                        <div class="card-back">
+                          <p class="drink-description">
+                            Thé jasmin, purée de fraises, just de litchi. / Jasmine tea, strawberry puree, litchi juice.
+                          </p>
+                          <button class="close-description">Close</button>
+                        </div>
+                      </div>
+                    </div>
+                  </section>
+
+
+                    <!-- Second drink card -->
+                   
+                    <section id="specialty-drinks">
+                      <div class="drinks-section">
+                        <div class="drink-container">
+                          <div class="drink-row">
+                    <div class="drink-card">
+                        <div class="card-inner">
+                          <div class="card-front">
+                            <img src="https://images.unsplash.com/photo-1485955900006-10f4d324d411?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1744&q=80" alt="Drink 1" class="drink-image">
+                            <span class="drink-name">Small Snake Plant</span>
+                            <span class="drink-price">$5.99</span>
+                            <button class="read-more">Read More...</button>
+                          </div>
+                          <div class="card-back">
+                            <p class="drink-description">
+                                Thé jasmin, purée de mangue, jus de mangues. / Jasmine tea, mango puree, mango juice.
+                            </p>
+                            <button class="close-description">Close</button>
+                          </div>
+                        </div>
+                      </div>
+                    <!-- Third drink card -->
+                    <div class="drink-card">
+                        <div class="card-inner">
+                          <div class="card-front">
+                            <img src="https://images.unsplash.com/photo-1545239705-1564e58b9e4a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80" alt="Drink 1" class="drink-image">
+                            <span class="drink-name">Leafy Monstera</span>
+                            <span class="drink-price">$5.99</span>
+                            <button class="read-more">Read More...</button>
+                          </div>
+                          <div class="card-back">
+                            <p class="drink-description">
+                                Lait de coco, pandan, lait de coco condensé. / Coconut Milk, pandan, condensed coconut milk.
+                            <button class="close-description">Close</button>
+                          </div>
+                        </div>
+                      </div>
+                    <!-- Fourth drink card -->
+                    <div class="drink-card">
+                        <div class="card-inner">
+                          <div class="card-front">
+                            <img src="https://images.unsplash.com/photo-1509423350716-97f9360b4e09?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80" alt="Drink 1" class="drink-image">
+                            <span class="drink-name">Large Snake Plant</span>
+                            <span class="drink-price">$5.99</span>
+                            <button class="read-more">Read More...</button>
+                          </div>
+                          <div class="card-back">
+                            <p class="drink-description">
+                                Purée de taro frais, lait de coco condensé, lait d'avoine / Fresh taro puree, condensed coconut milk, oat milk.
+                            </p>
+                            <button class="close-description">Close</button>
+                          </div>
+                        </div>
+                      </div>
+      
+                    <!-- First drink card -->
+                    <div class="drink-card">
+                      <div class="card-inner">
+                        <div class="card-front">
+                          <img src="https://images.unsplash.com/photo-1509223197845-458d87318791?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1249&q=80" alt="Drink 1" class="drink-image">
+                          <span class="drink-name">Succulent</span>
+                          <span class="drink-price">$5.99</span>
+                          <button class="read-more">Read More...</button>
+                        </div>
+                        <div class="card-back">
+                          <p class="drink-description">
+                            Thé noir, sirop simple, lait de coco condensé, lait avoine / Black tea, simple syrup, condensed coconut milk, oat milk
+                          </p>
+                          <button class="close-description">Close</button>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- Second drink card -->
+                    <div class="drink-card">
+                        <div class="card-inner">
+                          <div class="card-front">
+                            <img src="https://images.unsplash.com/photo-1507988914355-bf49fdbc7368?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=756&q=80g" alt="Drink 1" class="drink-image">
+                            <span class="drink-name">Very Large Snake Plant</span>
+                            <span class="drink-price">$5.99</span>
+                            <button class="read-more">Read More...</button>
+                          </div>
+                          <div class="card-back">
+                            <p class="drink-description">
+                              This is a long description of the Limonade Matcha/Lemonade Matcha. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum. Cras venenatis.
+                            </p>
+                            <button class="close-description">Close</button>
+                          </div>
+                        </div>
+                      </div>
+                      </div>
+                    
+                    </section>
+      
+                    <script src="menu-scripts.js"></script>
+
+                  </body>
+                      
+                      
+                         
+                      </main>
+                      <footer>
+                        
+                        <div class="footer-copyright">
+                            <p>© 2023 All rights reserved</p>
+                        </div>
+                    </footer>
+                    
+                     
+                      
